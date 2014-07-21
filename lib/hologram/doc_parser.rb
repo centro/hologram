@@ -96,9 +96,7 @@ module Hologram
     def build_output(doc_blocks, output_file = nil, depth = 1)
       return if doc_blocks.nil?
 
-      # sort elements in alphabetical order ignoring case
-      doc_blocks.sort{|a, b| a[0].downcase<=>b[0].downcase}.map do |key, doc_block|
-
+      doc_blocks.map do |key, doc_block|
         #doc_blocks are guaranteed to always have categories (top-level have categories, children get parent categories if empty).
         doc_block.categories.each do |category|
           output_file = get_file_name(category)
