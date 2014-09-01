@@ -1,6 +1,6 @@
 module Hologram
   class DocParser
-    SUPPORTED_EXTENSIONS = ['.css', '.scss', '.less', '.sass', '.styl', '.js', '.md', '.markdown', '.erb' ]
+    SUPPORTED_EXTENSIONS = ['.css', '.scss', '.less', '.sass', '.styl', '.js', '.md', '.markdown', '.erb', '.suit']
     attr_accessor :source_path, :pages, :doc_blocks
 
     def initialize(source_path, index_name = nil, plugins)
