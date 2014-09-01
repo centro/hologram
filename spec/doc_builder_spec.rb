@@ -163,7 +163,7 @@ describe Hologram::DocBuilder do
         end
 
         it 'returns false' do
-          expect(builder.is_valid?).to be_falsey
+          expect(builder.is_valid?).to be_falsy
         end
 
         it 'populates errors' do
@@ -179,7 +179,7 @@ describe Hologram::DocBuilder do
       end
 
       it 'returns false' do
-        expect(builder.is_valid?).to be_falsey
+        expect(builder.is_valid?).to be_falsy
       end
 
       it 'populates errors' do
